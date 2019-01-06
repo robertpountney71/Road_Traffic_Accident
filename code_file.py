@@ -5,7 +5,7 @@ import database_checks
 """
 This module will covert all the .csv files in current directory into one combined dataframe 
 keyed on Accident_Index. It will then split the dataframe 80:20 into a training and testing 
-sqlite database. These databases are then fed into mml.fit/test functions respectively
+sqlite database. These databases are then fed into database_checks.fit/test functions respectively
 """
 
 conn = sqlite3.connect('final_data.db')  # Establish connection with sqlite database
